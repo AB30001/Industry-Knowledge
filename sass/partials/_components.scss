@@ -1,0 +1,51 @@
+//page container
+.pageContainer {
+  margin: 2rem 0;
+}
+
+//navbar
+.navbar {
+  &__logo {
+    margin-right: 1rem;
+    &--img {
+      width: 100px;
+    }
+  }
+}
+
+//paragraph
+.paragraph {
+  width: 280px;
+  text-align: center;
+  margin: 3.5rem auto;
+}
+
+//cards
+.card {
+  box-shadow: $box-shadow;
+  padding: 18px;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+  &__img {
+    padding: 10px;
+    width: 100%;
+  }
+  &-title {
+    height: 30px;
+  }
+  &-subtitle {
+    height: 40px;
+  }
+
+  &__division {
+    height: 2px;
+    width: 63%;
+    background-color: $colour-secondary;
+    margin-bottom: 0.5rem;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

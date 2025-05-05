@@ -1,0 +1,26 @@
+@import "partials/variables";
+@import "partials/components";
+
+//custom
+
+$h1-font-size: 2rem;
+$h5-font-size: 1.4rem;
+$h6-font-size: 1.1rem;
+$headings-margin-bottom: 2rem;
+$font-family-base: $font-primary;
+$headings-font-family: $font-headings;
+
+$primary: $colour-primary;
+$secondary: $colour-secondary;
+$light: $colour-light;
+$body-bg: $colour-light;
+$body-color: $colour-dark;
+
+$link-color: $colour-dark;
+$link-decoration: none;
+
+$card-bg: $colour-light;
+$card-border-width: 0px;
+$card-border-radius: 10px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
