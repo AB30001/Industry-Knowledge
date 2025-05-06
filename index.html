@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arnas Balciunas | Portfolio 2 CA</title>
+    <title>Arnas Balciunas | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/uml3xoq.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -36,112 +37,83 @@
       </nav>
     </header>
 
-    <body>
+    <main>
       <div class="pageContainer">
-        <div class="container">
-          <h1>Recent work</h1>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-            <div class="col">
-              <a
-                href="https://github.com/AB30001/SP-2-auction"
-                target="_blank"
-                class="card__link"
-              >
-                <div class="card">
-                  <img
-                    src="./images/bidora-sc.PNG"
-                    alt="..."
-                    class="card__img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Bidora</h5>
-                    <h6 class="card-subtitle">Semester Project 2</h6>
-                    <div class="card__division"></div>
-                    <p class="card-text">
-                      Bidora is a web application that allows users to buy and sell items. It is built with JavaScript, HTML, and CSS. The application is designed to be a simple and easy-to-use auction platform.
-                    </p>
-                    <div class="card__button">
-                      <a
-                        href="https://github.com/AB30001/SP-2-auction"
-                        target="_blank"
-                        class="btn btn-primary"
-                        >Github repo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </a>
+        <!-- Hero Section -->
+        <section id="hero" class="container text-center py-5">
+          <h1 id="hero-name" class="display-4"></h1>
+          <p id="hero-tagline" class="lead"></p>
+          <p id="hero-intro"></p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container py-5">
+          <h2 class="mb-4 text-center">About Me</h2>
+          <div class="row align-items-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <img id="about-image" alt="Profile Image" class="img-fluid rounded-circle shadow" />
             </div>
-            <div class="col">
-              <a
-                href="https://github.com/AB30001/JavaScript-Frameworks---Course-Assignment"
-                target="_blank"
-                class="card__link"
-              >
-                <div class="card">
-                  <img
-                    src="./images/tiger-shop-sc.PNG"
-                    alt="..."
-                    class="card__img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Tiger Shop</h5>
-                    <h6 class="card-subtitle">JS Frameworks CA</h6>
-                    <div class="card__division"></div>
-                    <p class="card-text">
-                      TigerShop is a simulated e-commerce store featuring cart functionality and a mock checkout process. It manages the cart using context and a reducer for state management.
-                    </p>
-                    <div class="card__button">
-                      <a
-                        href="https://github.com/AB30001/JavaScript-Frameworks---Course-Assignment"
-                        target="_blank"
-                        class="btn btn-primary"
-                        >Github repo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a
-                href="https://github.com/AB30001/Project-Exam-2"
-                target="_blank"
-                class="card__link"
-              >
-                <div class="card">
-                  <img
-                    src="./images/holidaze-sc.PNG"
-                    alt="..."
-                    class="card__img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Holidaze</h5>
-                    <h6 class="card-subtitle">Project Exam 2</h6>
-                    <div class="card__division"></div>
-                    <p class="card-text">
-                      This project involved designing and developing a responsive web application for a fictional accommodation booking service called Holidaze. The site is fully responsive. 
-                    </p>
-                    <div class="card__button">
-                      <a
-                        href="https://github.com/AB30001/Project-Exam-2"
-                        target="_blank"
-                        class="btn btn-primary"
-                        >Github repo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </a>
+            <div class="col-md-8">
+              <h3>Bio</h3>
+              <p id="about-bio"></p>
+              <h3>Background</h3>
+              <p id="about-background"></p>
             </div>
           </div>
-          <p class="paragraph">
-            Thanks a lot for the past 2 years.</br>
-            @arnasbalciunas &#9996;
-          </p>
-          
-        </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container py-5">
+          <h2 class="mb-4 text-center">Skills</h2>
+          <div id="skills-container" class="row text-center">
+            <!-- Skills will be loaded dynamically and styled in app.js to use col classes -->
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container py-5">
+          <h2 class="mb-4 text-center">Recent work</h2>
+          <div id="projects-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-lg-5">
+            <!-- Project cards will be loaded dynamically -->
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container py-5">
+          <h2 class="mb-4 text-center">Contact</h2>
+          <div class="contact-container text-center">
+            <p class="lead">
+              Feel free to reach out!
+            </p>
+            <p>
+              <strong>Email:</strong> 
+              <a id="contact-email" href="mailto:"></a>
+            </p>
+            <p>
+              <strong>GitHub:</strong> 
+              <a id="contact-github" href="" target="_blank"></a>
+            </p>
+            <p>
+              <strong>LinkedIn:</strong> 
+              <a id="contact-linkedin" href="" target="_blank"></a>
+            </p>
+            <p id="contact-additional-info" class="mt-3"></p>
+          </div>
+        </section>
       </div>
-    </body>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="paragraph mb-0">
+          Thanks a lot for the past 2 years.</br>
+          @arnasbalciunas &#9996;
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & Sanity Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
